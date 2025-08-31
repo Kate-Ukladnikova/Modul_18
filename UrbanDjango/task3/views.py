@@ -24,7 +24,9 @@ def clothes(request):
 
 def basket(request):
     text3 = 'Извините, ваша корзина пуста'
+    text4 = 'Корзина'
     context = {
         'text3': text3,
+        'text4': text4,
     }
     return render(request, 'third_task/basket.html', context)
