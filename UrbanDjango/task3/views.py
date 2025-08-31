@@ -5,13 +5,9 @@ from django.shortcuts import render
 def index(request):
     title = 'Интернет-магазин женской одежды "Катюша"'
     text = 'Главная страница'
-    text2 = 'Женская одежда'
-    text3 = 'Извините, ваша корзина пуста'
     context = {
         'title': title,
         'text': text,
-        'text2': text2,
-        'text3': text3,
     }
     return render(request, 'third_task/index.html', context)
 
