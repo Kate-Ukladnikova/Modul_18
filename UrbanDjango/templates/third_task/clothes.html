@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <!--    {% block title %}Женская одежда{% endblock %}-->
+    <title>{{ text2 }}</title>
 </head>
 <body>
-$END$
+  {% block content %}
+  <h2>{{ text2 }}</h2>
+  <ul>
+    <li>Головные уборы  <button>Купить</button></li>
+    <p></p>
+    <li>Платья  <button>Купить</button></li>
+    <p></p>
+    <li>Обувь  <button>Купить</button></li>
+    <p></p>
+    <button><a href="/platform">Вернуться обратно</a></button>
+  </ul>
+  {% endblock %}
 </body>
 </html>

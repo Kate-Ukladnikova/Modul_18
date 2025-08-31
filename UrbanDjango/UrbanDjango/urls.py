@@ -17,9 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from task2.views import func_template, ClassTemplate
+from task3.views import index, clothes, basket
 
 urlpatterns = [
+    path('', index, name='index'),
     path('admin/', admin.site.urls),
-    path('', func_template), # Подключение маршрутов task2
-    path('class/', ClassTemplate.as_view()) # Метод as_view() подключает класс
+    # path('', func_template), # Подключение маршрутов task2
+    # path('class/', ClassTemplate.as_view()) # Метод as_view() подключает класс
+    path('platform/', index),  # Подключение маршрута task3: главная страница
+    path('clothes/', clothes),  # Подключение маршрута task3: женская одежда
+    path('basket/', basket),  # Подключение маршрута task3: корзина
 ]
