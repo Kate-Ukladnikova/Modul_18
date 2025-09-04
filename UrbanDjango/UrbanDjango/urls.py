@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from task2.views import func_template, ClassTemplate
-from task3.views import index, clothes, basket
+# from task2.views import func_template, ClassTemplate
+# from task3.views import index, clothes, basket
+from task4.views import index, clothes, basket
 
 urlpatterns = [
     path('', index, name='index'),
