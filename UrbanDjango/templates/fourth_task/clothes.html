@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'fourth_task/menu.html' %}
+<head>
+    <meta charset="UTF-8">
+    <!--    {% block title %}Женская одежда{% endblock %}-->
+    <title>{{ pagename }}</title>
+</head>
+<body>
+  <header>
+        <h2 align="center"> {% block pagename %}{{ pagename }}{% endblock %} </h2>
+    </header>
+  {% block content %}
+  {% for l, m in content.items %}
+    {% for n in m %}
+        <ul>
+            <li><h2>{{ n }} <button>Купить</button></a></h2></li>
+        </ul>
+    {% endfor %}
+  {% endfor %}
+  <button><a href="/platform">Вернуться обратно</a></button>
+  {% endblock %}
+</body>
+</html>

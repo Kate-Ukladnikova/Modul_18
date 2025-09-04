@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="with=device-with, initial-scale=1.0">
+  <title>{% block title %}Мой интернет-магазин{% endblock %}</title>
+</head>
+<body>
+  <header>
+    <h2 align="center"> {% block pagename %}{{ pagename }}{% endblock %} </h2>
+  </header>
+  <main>
+    <h1 align="center">{{ title }}</h1>
+    <h2 align="center">{{ text }}</h2>
+    <a href="/platform">Главная</a>
+    <p></p>
+    <a href="/clothes">Магазин</a>
+    <p></p>
+    <a href="/basket">Корзина</a>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer>
+    <p>© 2025, Интернет-магазин</p>
+  </footer>
+</body>
+</html>
