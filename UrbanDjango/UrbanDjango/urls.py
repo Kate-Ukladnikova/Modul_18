@@ -20,12 +20,7 @@ from django.urls import include, path
 # from task3.views import index, clothes, basket
 # from task4.views import index, clothes, basket
 from django.urls import path
-from task5.views import sign_up_by_html, sign_up_by_django
-from task4.views import index, clothes, basket
 from django.urls import path
-# from task2.views import func_template, ClassTemplate
-# from task3.views import index, clothes, basket
-# from task4.views import index, clothes, basket
 from task5.views import sign_up_by_html, sign_up_by_django
 
 urlpatterns = [
