@@ -43,7 +43,14 @@ INSTALLED_APPS = [
     'task2',
     'task3',
     'task4',
+<<<<<<< HEAD
     'task5',
+=======
+<<<<<<< HEAD
+=======
+    'task5',
+>>>>>>> 2be7c96 (Добавлено выполненое задание task5.)
+>>>>>>> 90c81fd2783d3f164f3f900168f4b06e73ae208d
 ]
 
 MIDDLEWARE = [
